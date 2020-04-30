@@ -673,6 +673,18 @@ superResolutionModels: [
     modelFile: '../super_resolution/model/srgan_128_4.tflite',
     intro: 'Photo-realistic single image Super-Resolution using a generative adversarial network.',
     paperUrl: 'https://arxiv.org/abs/1609.04802'
+  },
+  {
+    modelName: 'ESRGAN 96x4 (TFLite)',
+    format: 'TFLite',
+    modelId: 'esrgan_96x4_tflite',
+    modelSize: '15.2MB',
+    inputSize: [96, 96, 3],
+    outputSize: [384, 384, 3],
+    scale: 4,
+    modelFile: '../super_resolution/model/esrgan_96_4.tflite',
+    intro: 'Photo-realistic single image Super-Resolution using a generative adversarial network.',
+    paperUrl: 'https://arxiv.org/abs/1609.04802'
   }
 ],
 

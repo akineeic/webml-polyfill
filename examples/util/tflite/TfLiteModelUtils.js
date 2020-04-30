@@ -91,7 +91,8 @@ function printTfLiteModel(model) {
       case 'TANH':
       case 'BATCH_TO_SPACE_ND':
       case 'TRANSPOSE':
-      case 'MAXIMUM': {
+      case 'MAXIMUM': 
+      case 'PRELU' :{
       } break;
       default: {
         console.warn(`\t\t\t  builtin_options: ${op} is not supported.}`);

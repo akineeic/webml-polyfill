@@ -153,7 +153,7 @@ class Utils {
     const width = this.inputSize[1];
     const channels = 3;
     const imageChannels = 4; // RGBA
-    const [mean, offset] = [127.5, 1];
+    const [mean, offset] = [255, 0];
     if (canvas.width !== width || canvas.height !== height) {
       throw new Error(`canvas.width(${canvas.width}) is not ${width} or canvas.height(${canvas.height}) is not ${height}`);
     }

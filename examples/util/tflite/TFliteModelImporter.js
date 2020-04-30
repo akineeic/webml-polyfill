@@ -424,6 +424,9 @@ class TFliteModelImporter {
             opType = this._nn.ARGMAX;
           }
         } break;
+        case tflite.BuiltinOperator.PRELU: {
+          opType = this._nn.PRELU;
+        } break;
         default: {
           throw new Error(`operator type ${opCode} is not supported.`);
         }
